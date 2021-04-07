@@ -1,0 +1,36 @@
+.cu-bar.tabbar .action .cuIcon-cu-image image {
+	width: 64rpx;
+	height: 64rpx;
+	display: inline-block;
+}
+
+.menu-bar {
+	display: flex;
+	position: relative;
+	align-items: center;
+	min-height: 100rpx;
+	justify-content: space-around;
+}
+
+.menu-bar .menu-action {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	flex-direction:column;
+	max-width: 100%;
+}
+
+.menu-bar .menu-action .menu-image {
+	margin: 0 auto;
+}
+
+.menu-bar .menu-action .menu-image image {
+	width: 100rpx;
+	height: 100rpx;
+	display: inline-block;
+}
+.article-image {
+	width:100%;
+	height:150rpx;
+}

@@ -1,0 +1,156 @@
+<!--index.wxml-->
+<cu-custom bgColor="bg-blue" >
+	<view slot="content">我的博客</view>
+</cu-custom>
+
+<view class="cu-bar search bg-white ">
+		<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big11010.jpg"></view>
+		<view class="search-form round">
+			<text class="cuIcon-search"></text>
+			<!-- @focus="InputFocus" @blur="InputBlur" -->
+			<input  :adjust-position="false" type="text" placeholder="搜索图片、文章、视频"
+			 confirm-type="search"></input>
+		</view>
+		<view class="action">
+			<text>广州</text>
+			<text class="cuIcon-triangledownfill"></text>
+		</view>
+	</view>
+<view>
+	<swiper class="screitemen-swiper" class="square-dot" indicator-dots="true" circular="true"
+		 :autoplay="true" interval="5000" duration="500">
+		 <block wx:for="{{swiperList}}" wx:key="*this">
+          <swiper-item>
+						<image src="{{item.url}}" mode="aspectFill" ></image>
+          </swiper-item>
+        </block>
+		</swiper>
+	</view>
+	<view class="menu-bar  bg-white margin-top-sm padding-tb-sm">
+	<view class="menu-action">
+		<view class="menu-image">
+			<image src="/static/logo/html5.png"></image>
+		</view>
+		<view class="text-black">H5</view>
+	</view>
+	<view class="menu-action">
+		<view class="menu-image">
+			<image src="/static/logo/js.png"></image>
+		</view>
+		<view class="text-black">JavaScript</view>
+	</view>
+	<view class="menu-action">
+		<view class="menu-image">
+			<image src="/static/logo/mysql.png"></image>
+		</view>
+		<view class="text-black">Mysql</view>
+	</view>
+	<view class="menu-action">
+		<view class="menu-image">
+			<image src="/static/logo/linux.png"></image>
+		</view>
+		<view class="text-black">Linux</view>
+	</view>
+</view>
+
+<!-- toxml讲html转wxml -->
+<!-- <towxml nodes="{{content}}"/> -->
+
+<view class="bg-white margin-top-sm padding-tb-sm padding-lr-xs">
+		<view class="block padding-xs">
+			<view class="text-black text-bold text-xl ">最新动态</view>
+		</view>
+		<view class="flex solid-bottom" >
+				<view class="flex-twice padding-xs" >
+					<view class="text-black text-df text-lg">redis hash命令如何使用redis hash命令如何使用</view>
+					<view class="flex justify-between padding-tb-sm">
+							<view>Laravel</view>
+							<view>2020-12-16</view>
+							<view>16</view>
+					</view>
+				</view>
+				<view class="flex-sub padding-xs" >
+						<view class="basis-xl solid" > 
+							<image class="article-image " src="/static/logo/linux.png"></image>
+						</view>
+				</view>
+		</view>
+		<view class="flex solid-bottom" >
+				<view class="flex-twice padding-xs" >
+					<view class="text-black text-df text-lg">redis hash命令如何使用redis hash命令如何使用</view>
+					<view class="flex justify-between padding-tb-sm">
+							<view>Laravel</view>
+							<view>2020-12-16</view>
+							<view>16</view>
+					</view>
+				</view>
+				<view class="flex-sub padding-xs" >
+						<view class="basis-xl solid" > 
+							<image class="article-image " src="/static/logo/linux.png"></image>
+						</view>
+				</view>
+		</view>
+		<view class="flex solid-bottom" >
+				<view class="flex-twice padding-xs" >
+					<view class="text-black text-df text-lg">redis hash命令如何使用redis hash命令如何使用</view>
+					<view class="flex justify-between padding-tb-sm">
+							<view>Laravel</view>
+							<view>2020-12-16</view>
+							<view>16</view>
+					</view>
+				</view>
+				<view class="flex-sub padding-xs" >
+						<view class="basis-xl solid" > 
+							<image class="article-image " src="/static/logo/linux.png"></image>
+						</view>
+				</view>
+		</view>
+		<view class="flex solid-bottom" >
+				<view class="flex-twice padding-xs" >
+					<view class="text-black text-df text-lg">redis hash命令如何使用redis hash命令如何使用</view>
+					<view class="flex justify-between padding-tb-sm">
+							<view>Laravel</view>
+							<view>2020-12-16</view>
+							<view>16</view>
+					</view>
+				</view>
+				<view class="flex-sub padding-xs" >
+						<view class="basis-xl solid" > 
+							<image class="article-image " src="/static/logo/linux.png"></image>
+						</view>
+				</view>
+		</view>
+</view>
+
+
+<view class="cu-bar tabbar bg-white foot ">
+	<view class="action ">
+		<view class="cuIcon-cu-image">
+			<image src="/static/tabbar/homepage.png"></image>
+		</view>
+		<view class="text-green">首页</view>
+	</view>
+	<view class="action">
+		<view class="cuIcon-cu-image">
+			<image src="/static/tabbar/document.png"></image>
+		</view>
+		<view class="text-gray">文章</view>
+	</view>
+	<view class="action">
+		<view class="cuIcon-cu-image">
+			<image src="/static/tabbar/map.png"></image>
+			<!-- <view class="cu-tag badge"></view> -->
+		</view>
+		<view class="text-gray">地图</view>
+	</view>
+	<view class="action">
+		<view class="cuIcon-cu-image">
+			<image src="/static/tabbar/addpeople.png"></image>
+			<!-- <view class="cu-tag badge"></view> -->
+		</view>
+		<view class="text-gray">我的</view>
+	</view>
+</view>
+
+
+
