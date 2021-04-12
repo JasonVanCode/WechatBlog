@@ -22,13 +22,7 @@ Page({
       id: 3,
       type: 'image',
       url: '/static/swiper_img/big84000.jpg'
-    }],
-    bottom_menu:[
-      {id:1,name:'首页',src:'/static/tabbar/homepage.png',is_select:true},
-      {id:2,name:'文章',src:'/static/tabbar/document.png',is_select:false},
-      {id:3,name:'地图',src:'/static/tabbar/map.png',is_select:false},
-      {id:4,name:'我的',src:'/static/tabbar/addpeople.png',is_select:false}
-    ]
+    }]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -77,15 +71,5 @@ Page({
       hasUserInfo: true
     })
   },
-  clickMenu:function(e)
-  {
-    let bottom_menu = [];
-    let current_id = e.currentTarget.id;
-    let menu = this.data.bottom_menu;
-    for(let i =0;i<menu.length;i++){
-        menu[i].is_select = menu[i].id == current_id?true:false;
-        bottom_menu.push(menu[i]);
-    }
-    this.setData({bottom_menu,bottom_menu});
-  }
+
 })

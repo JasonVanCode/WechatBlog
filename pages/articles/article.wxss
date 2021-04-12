@@ -1,0 +1,8 @@
+/* pages/articles/article.wxss */
+.cu-card .cu-item{
+  display: block;
+  background-color: var(--white);
+  overflow: hidden;
+  border-radius: 10rpx;
+  margin: 10rpx;
+}

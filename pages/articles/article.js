@@ -1,11 +1,21 @@
-// pages/news/news.js
+// pages/articles/article.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    TabCur: 1,
+    scrollLeft: 0,
+    navlist:[
+      {id:1,name:'PHP'},
+      {id:2,name:'VUE'},
+      {id:3,name:'LINUX'},
+      {id:4,name:'MYSQL'},
+      {id:5,name:'NGINX'},
+      {id:6,name:'REDIS'},
+    ],
+ 
   },
 
   /**
@@ -62,5 +72,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  tabSelect(e) {
+    console.log(e);
+    this.setData({
+      TabCur: e.currentTarget.dataset.id,
+      scrollLeft: (e.currentTarget.dataset.id-1)*60
+    })
   }
 })

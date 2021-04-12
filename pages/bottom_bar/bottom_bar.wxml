@@ -1,0 +1,9 @@
+<!--pages/bottom_bar/bottom_bar.wxml-->
+<view class="cu-bar tabbar bg-white foot ">
+	<view class="action" bindtap="clickMenu" wx:for="{{bottom_menu}}" wx:key="id" id="{{item.id}}">
+		<view class="cuIcon-cu-image">
+			<image src="{{item.src}}"></image>
+		</view>
+		<view class="{{item.path_name == pathname?'text-green':'text-gray'}}">{{item.name}}</view>
+	</view>
+</view>

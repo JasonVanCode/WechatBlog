@@ -91,18 +91,8 @@
 				</view>
 			</view>
 		</view>
-
 </view>
 
-<view class="cu-bar tabbar bg-white foot ">
-	<view class="action" bindtap="clickMenu" wx:for="{{bottom_menu}}" wx:key="name" id="{{item.id}}">
-		<view class="cuIcon-cu-image">
-			<image src="{{item.src}}"></image>
-		</view>
-		<view class="{{item.is_select?'text-green':'text-gray'}}">{{item.name}}</view>
-	</view>
-
-</view>
-
+<bottom-bar  pathname="index"></bottom-bar>
 
 
